@@ -19,8 +19,16 @@ namespace Language {
 
 		public int PlacesOfArticulation {
 			get {
-				//TODO
-				return 0;
+				int n = 0;
+				if (LabialArticulation.Point != ObstructionPoint.None)
+					n++;
+				if (CoronalArticulation.Point != ObstructionPoint.None)
+					n++;
+				if (DorsalArticulation.Point != ObstructionPoint.None)
+					n++;
+				if (RadicalArticulation.Point != ObstructionPoint.None)
+					n++;
+				return n;
 			}
 		}
 	}
