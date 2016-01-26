@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Language {
 	struct Grapheme {
-		string Grapheme;
+		//string Grapheme;
 		Sound Phone;
 
 		//Manner lowerbound, upperbound;
